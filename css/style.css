@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Mono+One&display=swap");
+.menu {
+  background-color: #FFDD00;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+}
+.menu .menu-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  max-width: 1480px;
+}
+.menu .menu-box .icon-menu {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.menu .menu-box .icon-menu .line {
+  width: 40px;
+  height: 5px;
+  background-color: #ED9D7E;
+}
+.menu .dropdown-menu {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #FFDD00;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  z-index: 100;
+}
+.menu .dropdown-menu .dropdown-menu-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+.menu .dropdown-menu a {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #5CB37E;
+  font-size: 45px;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.menu .dropdown-menu a:hover {
+  color: #ED9D7E;
+}
+.menu .dropdown-menu.show-dropdown {
+  max-height: 300px;
+}
+
+*,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #F6F95B;
+}
+
+.banner {
+  height: 100vh;
+}
+.banner .intro-banner {
+  max-width: 1480px;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.banner .intro-banner .image-section img {
+  width: 90%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+.banner .intro-banner .text-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.banner .intro-banner .text-section .artist-name,
+.banner .intro-banner .text-section .text-discname {
+  font-family: "Rubik Mono One", monospace;
+}
+.banner .intro-banner .text-section .artist-name {
+  color: #ED9D7E;
+  font-size: clamp(0.625rem, 1.953vw - 0.312rem, 1.25rem);
+  text-align: right;
+}
+.banner .intro-banner .text-section .text-discname {
+  font-size: clamp(2.5rem, -9.18vw + 9.844rem, 5.438rem);
+}
+.banner .intro-banner .text-section .text-artistname {
+  font-size: clamp(5.625rem, 14.648vw - 1.406rem, 10.8rem);
+  font-family: "Anton", sans-serif;
+  line-height: 147px;
+  display: flex;
+  justify-content: space-between;
+}
+.banner .intro-banner .text-section .text-discname,
+.banner .intro-banner .text-section .text-artistname {
+  color: #5CB37E;
+}
+.banner .intro-banner .text-section .view-more-btn {
+  margin-top: 15px;
+}
+.banner .intro-banner .text-section .view-more-btn button {
+  background-color: #ED9D7E;
+  padding: 15px 20px;
+  border: 0;
+  font-size: clamp(0.75rem, 0.5951rem + 0.708vw, 1.25rem);
+  font-weight: 800;
+  color: #FFDD00;
+  float: right;
+  margin-right: 20px;
+}
+
+.title-section {
+  font-family: "Rubik Mono One", monospace;
+}
+
+/*# sourceMappingURL=style.css.map */

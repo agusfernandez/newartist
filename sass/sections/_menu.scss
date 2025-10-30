@@ -1,0 +1,61 @@
+@use 'variables' as *;
+
+.menu {
+    background-color: $color_yellow;
+    height: 50px;
+    padding: 10px;
+    position: relative;
+
+    .menu-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        max-width: 1480px;
+        .icon-menu {
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .line {
+                width: 40px;
+                height: 5px;
+                background-color: $color_pink;
+            }
+        }
+       
+    }   
+     .dropdown-menu {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background-color: $color_yellow;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+            z-index: 100;
+            .dropdown-menu-box {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 40px;
+            }
+            a {
+                font-family: $font-family-Rubik;
+                font-weight: $font-weight-regular;
+                font-style: $font-style-normal;
+                color: $color_green;
+                font-size: $font-size-menu-desktop;
+                transition: color 0.2s ease;
+                cursor: pointer;
+                &:hover {
+                    color: $color_pink;
+                }
+            }
+
+            &.show-dropdown {
+                max-height: 300px;
+        }
+    }
+      
+}
