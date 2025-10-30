@@ -18,11 +18,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  cursor: pointer;
 }
 .menu .menu-box .icon-menu .line {
   width: 40px;
   height: 5px;
   background-color: #ED9D7E;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+.menu .menu-box .icon-menu.open .line:nth-child(1) {
+  transform: rotate(45deg) translate(14px, 10px);
+}
+.menu .menu-box .icon-menu.open .line:nth-child(2) {
+  opacity: 0;
+}
+.menu .menu-box .icon-menu.open .line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 .menu .dropdown-menu {
   position: absolute;
@@ -37,7 +49,7 @@
 .menu .dropdown-menu .dropdown-menu-box {
   display: flex;
   flex-direction: column;
-  padding: 20px 40px;
+  padding: 20px 40px 40px;
 }
 .menu .dropdown-menu a {
   font-family: "Rubik Mono One", monospace;
@@ -52,7 +64,7 @@
   color: #ED9D7E;
 }
 .menu .dropdown-menu.show-dropdown {
-  max-height: 300px;
+  max-height: 350px;
 }
 
 *,
@@ -129,8 +141,31 @@ body {
   margin-right: 20px;
 }
 
-.title-section {
+.info-artist-section {
+  position: relative;
+}
+.info-artist-section .info-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.info-artist-section .title-section {
   font-family: "Rubik Mono One", monospace;
+}
+.info-artist-section .info-artist-block,
+.info-artist-section .disc-artist-block {
+  width: 50%;
+}
+.info-artist-section .info-artist-block {
+  content: "";
+  background-image: url("../imgs/background1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 60%;
+  height: 800px;
 }
 
 /*# sourceMappingURL=style.css.map */

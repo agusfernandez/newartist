@@ -1,5 +1,37 @@
 @use 'variables' as *;
 
-.title-section {
-    font-family: $font-family-Rubik;
+.info-artist-section {
+    position: relative;
+    .background-section {
+        
+        
+    }
+
+    .info-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .title-section {
+        font-family: $font-family-Rubik;
+    }
+    .info-artist-block,
+    .disc-artist-block {
+        width: 50%;
+    }
+
+    .info-artist-block {
+        content: "";
+        background-image: url("../imgs/background1.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        width: 60%;
+        height: 800px;  
+    }
+
+ 
 }
+
