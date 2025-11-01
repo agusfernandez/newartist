@@ -144,11 +144,20 @@ body {
 .info-artist-section {
   position: relative;
 }
+.info-artist-section .background-section {
+  clip-path: polygon(0 0, 44% 0, 100% 30%, 100% 70%, 79% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: #FFDD00;
+  height: 1000px;
+  width: 70%;
+}
 .info-artist-section .info-box {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .info-artist-section .title-section {
   font-family: "Rubik Mono One", monospace;
@@ -158,14 +167,8 @@ body {
   width: 50%;
 }
 .info-artist-section .info-artist-block {
-  content: "";
-  background-image: url("../imgs/background1.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: block;
-  width: 60%;
-  height: 800px;
+  width: 40%;
 }
 
 /*# sourceMappingURL=style.css.map */
