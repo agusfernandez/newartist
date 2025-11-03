@@ -3,10 +3,15 @@
 .info-artist-section {
     position: relative;
     .background-section {
-        clip-path: polygon(0 0, 44% 0, 100% 30%, 100% 70%, 79% 100%, 30% 100%, 0% 70%, 0% 30%);
+        clip-path: polygon(0 0, 66% 0, 100% 16%, 100% 70%, 0 100%, 0 100%, 0 64%, 0% 30%);
         background-color: $color_yellow;
-        height: 1000px;
-        width: 70%;
+        height: 1200px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
     }
 
     .info-box {
@@ -14,24 +19,56 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin: auto;
-        position: absolute;
+        position: relative;
         top: 0;
-        width: 100%;
+        width: 75%;
+        z-index: 2;
+        padding-top: 60px;
     }
+
     .title-section {
         font-family: $font-family-Rubik;
+        margin-bottom: 30px;
+        font-size: 20px;
     }
+
+
     .info-artist-block,
     .disc-artist-block {
         width: 50%;
     }
 
+
     .info-artist-block {
-    
-        display: block;
-        width: 40%;
+        color: $color_green;
+
+        p{
+              font-family: $font-family-Monospace;
+              font-size: 20px;
+              line-height: 30px;
+        }
     }
 
+    .disc-artist-block {
+        color: $color_pink;
+        text-align: right;
+        ul {
+            li {
+                font-size: 24px;
+                font-family: $font-family-Monospace;
+                .year-disc {
+                    font-weight: 800;
+                    margin-right: 20px;
+                }
+
+            }
+        }
+    }
  
 }
 
+ul {
+    li {
+        list-style: none;
+    }
+}
