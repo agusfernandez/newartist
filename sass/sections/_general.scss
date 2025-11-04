@@ -8,5 +8,38 @@ body  {
 
 body {
     background-color: $color_yellow_light;
+    
+    main {
+        overflow: hidden;
+    }
 
+    .title-section {
+        font-family: $font-family-Rubik;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .slick-carousel {
+        .slick-list {
+            padding: 0 60px 0 0!important;
+        }
+        .slick-arrow {
+            top: 40%;
+            width: 40px;
+            height: 40px;
+        }
+
+        .slick-prev {
+            left: -40px;
+        }
+    }
+
+  
 }
+
+.slick-next:before, 
+.slick-prev:before {
+    color: $color_pink!important;   
+    font-size: 30px!important;
+}
+

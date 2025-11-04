@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Mono+One&display=swap");
 .menu {
-  background-color: #FFDD00;
+  background-color: #EADA52;
   height: 50px;
   padding: 10px;
   position: relative;
@@ -40,7 +40,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  background-color: #FFDD00;
+  background-color: #EADA52;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-in-out;
@@ -55,7 +55,7 @@
   font-family: "Rubik Mono One", monospace;
   font-weight: 400;
   font-style: normal;
-  color: #5CB37E;
+  color: #45AF65;
   font-size: 45px;
   transition: color 0.2s ease;
   cursor: pointer;
@@ -75,6 +75,31 @@ body {
 
 body {
   background-color: #F6F95B;
+}
+body main {
+  overflow: hidden;
+}
+body .title-section {
+  font-family: "Rubik Mono One", monospace;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+body .slick-carousel .slick-list {
+  padding: 0 60px 0 0 !important;
+}
+body .slick-carousel .slick-arrow {
+  top: 40%;
+  width: 40px;
+  height: 40px;
+}
+body .slick-carousel .slick-prev {
+  left: -40px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: #ED9D7E !important;
+  font-size: 30px !important;
 }
 
 .banner {
@@ -125,20 +150,21 @@ body {
 }
 .banner .intro-banner .text-section .text-discname,
 .banner .intro-banner .text-section .text-artistname {
-  color: #5CB37E;
+  color: #45AF65;
 }
 .banner .intro-banner .text-section .view-more-btn {
   margin-top: 15px;
 }
 .banner .intro-banner .text-section .view-more-btn button {
   background-color: #ED9D7E;
-  padding: 15px 20px;
+  padding: 15px 40px;
   border: 0;
   font-size: clamp(0.75rem, 0.5951rem + 0.708vw, 1.25rem);
   font-weight: 800;
-  color: #FFDD00;
+  color: #EADA52;
   float: right;
   margin-right: 20px;
+  border-radius: 52%;
 }
 
 .info-artist-section {
@@ -146,7 +172,7 @@ body {
 }
 .info-artist-section .background-section {
   clip-path: polygon(0 0, 66% 0, 100% 16%, 100% 70%, 0 100%, 0 100%, 0 64%, 0% 30%);
-  background-color: #FFDD00;
+  background-color: #EADA52;
   height: 1200px;
   width: 100%;
   position: absolute;
@@ -165,17 +191,12 @@ body {
   z-index: 2;
   padding-top: 60px;
 }
-.info-artist-section .title-section {
-  font-family: "Rubik Mono One", monospace;
-  margin-bottom: 30px;
-  font-size: 20px;
-}
 .info-artist-section .info-artist-block,
 .info-artist-section .disc-artist-block {
   width: 50%;
 }
 .info-artist-section .info-artist-block {
-  color: #5CB37E;
+  color: #45AF65;
 }
 .info-artist-section .info-artist-block p {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
@@ -189,6 +210,8 @@ body {
 .info-artist-section .disc-artist-block ul li {
   font-size: 24px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
 .info-artist-section .disc-artist-block ul li .year-disc {
   font-weight: 800;
@@ -197,6 +220,32 @@ body {
 
 ul li {
   list-style: none;
+}
+
+.songs-top-section {
+  margin-top: 80px;
+}
+.songs-top-section .box-title {
+  width: 75%;
+  margin: auto;
+}
+.songs-top-section .title-section {
+  color: #45AF65;
+}
+.songs-top-section .songs-box {
+  margin-top: 30px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.songs-top-section .songs-box .songs-carrusel {
+  width: 87%;
+}
+.songs-top-section .songs-box iframe {
+  width: 100%;
+  height: 310px;
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

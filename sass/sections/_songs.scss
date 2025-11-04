@@ -1,0 +1,33 @@
+@use 'variables'  as *;
+
+.songs-top-section {
+    margin-top: 80px;
+    .box-title {
+        width: 75%;
+        margin: auto;
+
+    }
+    .title-section {
+        color: $color_green;
+    }
+
+    .songs-box {
+        margin-top: 30px;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+
+        .songs-carrusel {
+            width: 87%;
+        }
+    
+      
+        iframe {
+            width: 100%;
+            height: 310px;
+            padding-right: 10px;
+        }
+    }
+}

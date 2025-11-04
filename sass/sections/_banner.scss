@@ -62,13 +62,14 @@
                 margin-top: 15px;
                 button {
                     background-color: $color_pink;
-                    padding: 15px 20px;
+                    padding: 15px 40px;
                     border: 0;
                     font-size: clamp(0.75rem, 0.5951rem + 0.708vw, 1.25rem);
                     font-weight: 800;
                     color: $color_yellow;
                     float: right;
                     margin-right: 20px;
+                    border-radius: 52%;
                 }
             } 
         }
