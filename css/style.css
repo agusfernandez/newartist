@@ -43,13 +43,15 @@
   background-color: #EADA52;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-in-out;
+  transition: max-height 0.7s ease-in-out;
   z-index: 100;
 }
 .menu .dropdown-menu .dropdown-menu-box {
   display: flex;
   flex-direction: column;
   padding: 20px 40px 40px;
+  height: 100%;
+  justify-content: center;
 }
 .menu .dropdown-menu a {
   font-family: "Rubik Mono One", monospace;
@@ -57,14 +59,14 @@
   font-style: normal;
   color: #45AF65;
   font-size: 45px;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
   cursor: pointer;
 }
 .menu .dropdown-menu a:hover {
   color: #ED9D7E;
 }
 .menu .dropdown-menu.show-dropdown {
-  max-height: 350px;
+  max-height: 400px;
 }
 
 *,
@@ -84,22 +86,24 @@ body .title-section {
   margin-bottom: 30px;
   font-size: 20px;
 }
-body .slick-carousel .slick-list {
-  padding: 0 60px 0 0 !important;
-}
 body .slick-carousel .slick-arrow {
   top: 40%;
   width: 40px;
   height: 40px;
-}
-body .slick-carousel .slick-prev {
-  left: -40px;
 }
 
 .slick-next:before,
 .slick-prev:before {
   color: #ED9D7E !important;
   font-size: 30px !important;
+}
+
+.slick-prev {
+  left: -40px !important;
+}
+
+.slick-list {
+  padding: 0 60px 0 0 !important;
 }
 
 .banner {
@@ -158,13 +162,14 @@ body .slick-carousel .slick-prev {
 .banner .intro-banner .text-section .view-more-btn button {
   background-color: #ED9D7E;
   padding: 15px 40px;
-  border: 0;
+  border: 2px solid #E0B6D4;
   font-size: clamp(0.75rem, 0.5951rem + 0.708vw, 1.25rem);
   font-weight: 800;
   color: #EADA52;
   float: right;
   margin-right: 20px;
   border-radius: 52%;
+  cursor: pointer;
 }
 
 .info-artist-section {
@@ -246,6 +251,33 @@ ul li {
   width: 100%;
   height: 310px;
   padding-right: 10px;
+}
+
+.gallery-section .box-title {
+  width: 75%;
+  margin: auto;
+}
+.gallery-section .gallery-container {
+  margin-top: 30px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.gallery-section .gallery-container .gallery-slider {
+  width: 87%;
+}
+.gallery-section .gallery-container .gallery-slider .slick-list {
+  padding: 0 60px 0 0 !important;
+}
+.gallery-section .gallery-container .gallery-slider .slide-item {
+  padding-right: 10px;
+}
+.gallery-section .gallery-container .gallery-slider .slide-item img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

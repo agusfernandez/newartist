@@ -45,12 +45,14 @@
             background-color: $color_yellow;
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.4s ease-in-out;
+            transition: max-height 0.7s ease-in-out;
             z-index: 100;
             .dropdown-menu-box {
                 display: flex;
                 flex-direction: column;
                 padding: 20px 40px 40px;
+                height: 100%;
+                justify-content: center;
             }
             a {
                 font-family: $font-family-Rubik;
@@ -58,7 +60,7 @@
                 font-style: $font-style-normal;
                 color: $color_green;
                 font-size: $font-size-menu-desktop;
-                transition: color 0.2s ease;
+                transition: color 0.3s ease;
                 cursor: pointer;
                 &:hover {
                     color: $color_pink;
@@ -66,7 +68,7 @@
             }
 
             &.show-dropdown {
-                max-height: 350px;
+                max-height: 400px;
         }
     }
       

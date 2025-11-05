@@ -1,4 +1,35 @@
 @use 'variables' as *;
 
 .gallery-section {
+    .box-title {
+        width: 75%;
+        margin: auto;
+
+    }
+    .gallery-container {
+        margin-top: 30px;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        .gallery-slider {
+            width: 87%;
+            .slick-list {
+                padding: 0 60px 0 0!important;
+            }
+            .slide-item {
+                padding-right: 10px;
+                 
+                    img {
+                        width: 100%;
+                        height: 230px;
+                        object-fit: cover;
+                        border-radius: 12px;
+                    }
+             }
+        }
+    }
+
+    
 }
+    
