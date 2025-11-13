@@ -26,6 +26,7 @@
   background-color: #ED9D7E;
   transition: all 0.3s ease;
   transform-origin: center;
+  cursor: pointer;
 }
 .menu .menu-box .icon-menu.open .line:nth-child(1) {
   transform: rotate(45deg) translate(14px, 10px);
@@ -251,11 +252,15 @@ ul li {
   width: 100%;
   height: 310px;
   padding-right: 10px;
+  opacity: 1 !important;
 }
 
 .gallery-section .box-title {
   width: 75%;
   margin: auto;
+}
+.gallery-section .box-title .title-section {
+  color: #45AF65;
 }
 .gallery-section .gallery-container {
   margin-top: 30px;
@@ -278,6 +283,52 @@ ul li {
   height: 230px;
   object-fit: cover;
   border-radius: 12px;
+}
+
+.new-concerts {
+  margin-top: 50px;
+}
+.new-concerts .box-title {
+  width: 75%;
+  margin: auto;
+}
+.new-concerts .box-title .title-section {
+  color: #45AF65;
+}
+.new-concerts .disc-artist-block {
+  width: 75%;
+  margin: auto;
+}
+.new-concerts .disc-artist-block ul li {
+  font-size: 15px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: #ED9D7E;
+}
+.new-concerts .disc-artist-block ul li .year-disc {
+  font-weight: 800;
+  margin-right: 15px;
+}
+
+footer {
+  background-color: #45AF65;
+  margin-top: 20px;
+}
+footer .footer-section {
+  padding: 20px 0;
+  width: 75%;
+  margin: auto;
+}
+footer .footer-section ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+footer .footer-section ul li i {
+  color: rgba(64, 88, 32, 0.9803921569);
+  font-size: 17px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

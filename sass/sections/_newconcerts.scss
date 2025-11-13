@@ -1,0 +1,30 @@
+@use 'variables' as *;
+
+.new-concerts {
+    margin-top: 50px;
+     .box-title {
+        width: 75%;
+        margin: auto;
+        .title-section {
+            color: $color_green;
+        }
+
+    }
+    .disc-artist-block {
+         width: 75%;
+         margin: auto;
+         ul {
+            li {
+                font-size: 15px;
+                font-family: $font-family-Monospace;
+                line-height: 20px;
+                margin-bottom: 10px;
+                color: $color_pink;
+                .year-disc {
+                    font-weight: 800;
+                    margin-right: 15px;
+                }
+            }
+         }
+    }
+}

@@ -25,6 +25,7 @@
                 background-color: $color_pink;
                 transition: all 0.3s ease;
                 transform-origin: center;
+                cursor: pointer;
             }
             &.open .line:nth-child(1) {
                 transform: rotate(45deg) translate(14px, 10px);

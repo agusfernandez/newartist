@@ -9,6 +9,31 @@ var settings = {
   slidesToShow: 3,
   centerMode: true,
   centerPadding: '60px',
+   responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 2,
+            centerPadding: '20px'
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            centerMode: false,
+            centerPadding: '0'
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            centerMode: false,
+            centerPadding: '0'
+          }
+        }
+      ]
 };
 
 function setSlideVisibility() {

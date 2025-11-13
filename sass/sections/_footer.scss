@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+footer {
+    background-color: $color_green;
+    margin-top: 20px;
+    .footer-section {
+        padding: 20px 0;
+        width: 75%;
+        margin: auto;
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            li {
+                i {
+                    color: $color_green3;
+                    font-size: 17px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
