@@ -16,8 +16,7 @@
 
     .info-box {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         margin: auto;
         position: relative;
         top: 0;
